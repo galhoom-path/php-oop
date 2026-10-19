@@ -35,7 +35,7 @@ triggers:
 
 Student profile: no computer science background, knows basic PHP only (variables, functions, arrays, loops, if/else, basic HTML output, how to run a PHP file). Assumes nothing beyond that.
 
-- **Comes after:** [PHP Fundamentals](https://github.com/galhoom-study-method/php-fundamentals), which teaches every prerequisite listed above.
+- **Comes after:** [PHP Fundamentals](https://github.com/galhoom-path/php-fundamentals), which teaches every prerequisite listed above.
 
 ---
 
