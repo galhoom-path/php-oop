@@ -36,7 +36,7 @@
 > [**official PHP documentation**](https://www.php.net/manual/en/langref.php),  
 > with interview questions and a final project to master it all.  
 > It is the **second link** in a series:
-> [**PHP Fundamentals**](https://github.com/Galhoom22/php-documentation-) → **PHP OOP** → **OOD**.
+> [**PHP Fundamentals**](https://github.com/galhoom-path/php-fundamentals) → **PHP OOP** → **OOD**.
 
 <br/>
 
@@ -341,7 +341,7 @@ Object-Oriented Programming is how **real PHP applications** are built — from 
 
 | Order | Repository | Covers |
 |:---:|:---|:---|
-| **1** | [PHP Fundamentals](https://github.com/Galhoom22/php-documentation-) | The core language, functions, and web basics — no OOP |
+| **1** | [PHP Fundamentals](https://github.com/galhoom-path/php-fundamentals) | The core language, functions, and web basics — no OOP |
 | **2** | **PHP OOP** *(this repo)* | Classes, objects, interfaces, traits, enums, exceptions, namespaces, PHPUnit |
 | **3** | OOD | Design principles and patterns built on OOP |
 
@@ -521,7 +521,7 @@ Part-3-Modern-PHP/    →  Lectures 21–31
 
 | Step | Action | Where |
 |:---:|:---|:---|
-| **0️⃣** | ⬅️ New to PHP? Finish the previous repo in the series first | [PHP Fundamentals](https://github.com/Galhoom22/php-documentation-) |
+| **0️⃣** | ⬅️ New to PHP? Finish the previous repo in the series first | [PHP Fundamentals](https://github.com/galhoom-path/php-fundamentals) |
 | **1️⃣** | 📖 Open the lecture guide and start **Lecture 1** | [`01-Lectures/`](01-Lectures/) → [`Lecture-01-why-not-only-functions/`](01-Lectures/Part-1-Foundations/Lecture-01-why-not-only-functions/) |
 | **2️⃣** | ✍️ Type each example into that lecture’s `code-N.php` files — one session at a time | e.g. [`Lecture-09-asymmetric-visibility/`](01-Lectures/Part-1-Foundations/Lecture-09-asymmetric-visibility/) |
 | **3️⃣** | 💼 After all 31 lectures, practice interview answers | [`02-Interview-Questions/`](02-Interview-Questions/) |
@@ -593,7 +593,7 @@ Part-3-Modern-PHP/    →  Lectures 21–31
 </tr>
 <tr>
 <td align="center">📖</td>
-<td>Basic PHP — variables, functions, arrays, control structures <sub>(covered in <a href="https://github.com/Galhoom22/php-documentation-">PHP Fundamentals</a>)</sub></td>
+<td>Basic PHP — variables, functions, arrays, control structures <sub>(covered in <a href="https://github.com/galhoom-path/php-fundamentals">PHP Fundamentals</a>)</sub></td>
 </tr>
 <tr>
 <td align="center">💻</td>
