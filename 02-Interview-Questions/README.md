@@ -44,7 +44,7 @@ This track stays inside PHP OOP. Do not teach design patterns, SOLID, or broad O
 
 ### Interview Track Review Checklist
 
-Use this checklist before moving from the interview-question track to the final project.
+Use this checklist before moving from the interview-question track to visual maps.
 
 ```
 - [ ] Every interview question from 1 to 42 is marked with ✅ in the progress list.
@@ -58,7 +58,7 @@ Use this checklist before moving from the interview-question track to the final 
 - [ ] Weak questions were repeated until the student could answer clearly and confidently.
 ```
 
-Do not start `../03-Final-Project/README.md` until this checklist is complete.
+Do not start `../03-Visual-Maps/README.md` until this checklist is complete.
 
 ### Interview Question Progress
 

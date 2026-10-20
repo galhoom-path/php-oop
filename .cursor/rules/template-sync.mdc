@@ -13,7 +13,7 @@ A change that makes `template.md` outdated is an incomplete change.
 Any change to the repo's **structure, conventions, or method**, for example:
 
 - Adding, removing, renaming, or reordering tracks, part folders, or folder/file naming patterns
-- Changing the format of `review-N.md`, `code-N` files, question `README.md`, `notes.md`, or `Milestone/`
+- Changing the format of `review-N.md`, `code-N` files, question `README.md`, `notes.md`, `map.md`, or `Milestone/`
 - Adding, removing, or reordering sections in the root `README.md` or any track `README.md`
 - Changing rules: the iterative cycle, 3-phase method, language rules, code standards, tutor role,
   source/citation rules, checklists, milestone rules, session flow, or "What Not To Do"
@@ -22,8 +22,8 @@ Any change to the repo's **structure, conventions, or method**, for example:
 
 ## What does NOT require an update
 
-Learner content and subject-specific content: `code-N` files, `review-N.md` text, progress check marks,
-lecture/question wording that only applies to this subject, and project code.
+Learner content and subject-specific content: `code-N` files, `review-N.md` text, filled `map.md` diagrams,
+progress check marks, lecture/question/map wording that only applies to this subject, and project code.
 
 ## How to update
 
@@ -31,8 +31,8 @@ lecture/question wording that only applies to this subject, and project code.
    defined in its Section 2 instead of subject-specific values.
 2. If a new placeholder is introduced, define it in Section 2.
 3. If a new required file or check is introduced, add it to Section 6 (structure),
-   Section 16 (checklist), and Section 17 (AI prompt).
-4. If this rule file itself changes, update its copy in Section 18 of `template.md`.
+   Section 17 (checklist), and Section 18 (AI prompt).
+4. If this rule file itself changes, update its copy in Section 19 of `template.md`.
 5. Update the `Template last synced` date at the top of `template.md` to today.
 6. Verify: code fences are balanced, Table of Contents links resolve, and every upper-case placeholder is defined.
 7. In the final response, state which `template.md` sections were updated, or state

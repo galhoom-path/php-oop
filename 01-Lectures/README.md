@@ -371,10 +371,11 @@ Each track is a self-contained folder with its guide as `README.md`. The repo ro
 README.md                           // Repo overview — start here
 01-Lectures/                        // Track 1 · guide + workspace
 02-Interview-Questions/             // Track 2 · guide + workspace
-03-Final-Project/                   // Track 3 · guide + workspace
+03-Visual-Maps/                     // Track 3 · guide + workspace
+04-Final-Project/                   // Track 4 · guide + workspace
 ```
 
-Use **numeric prefixes** (`01-`, `02-`, `03-`) so GitHub lists tracks in learning-path order.
+Use **numeric prefixes** (`01-`, `02-`, `03-`, `04-`) so GitHub lists tracks in learning-path order.
 
 ### Folder structure
 

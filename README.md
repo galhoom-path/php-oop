@@ -13,7 +13,7 @@
 ![PHP](https://img.shields.io/badge/PHP-8.5%2B-777BB4?style=for-the-badge&logo=php&logoColor=white)
 ![OOP](https://img.shields.io/badge/Focus-OOP-2563EB?style=for-the-badge)
 ![Source](https://img.shields.io/badge/Source-Official%20PHP%20Manual-059669?style=for-the-badge)
-![Tracks](https://img.shields.io/badge/Tracks-3-D97706?style=for-the-badge)
+![Tracks](https://img.shields.io/badge/Tracks-4-D97706?style=for-the-badge)
 ![Progress](https://img.shields.io/badge/Lectures-12%2F31%20Done-2563EB?style=for-the-badge)
 ![Current](https://img.shields.io/badge/Current-Lecture%2013-F59E0B?style=for-the-badge)
 
@@ -24,7 +24,7 @@
 ║                                                                      ║
 ║     🐘  P H P   O O P   D O C U M E N T A T I O N   B O O K  📖      ║
 ║                                                                      ║
-║          Lectures  ──▶  Interview Prep  ──▶  Final Project          ║
+║   Lectures ──▶ Interviews ──▶ Visual Maps ──▶ Final Project         ║
 ║                                                                      ║
 ╚══════════════════════════════════════════════════════════════════════╝
 ```
@@ -34,13 +34,13 @@
 > 🎯 **This repo is for those who want to study everything related to OOP in PHP**  
 > with modern **PHP 8.5+** syntax. All lectures follow the  
 > [**official PHP documentation**](https://www.php.net/manual/en/langref.php),  
-> with interview questions and a final project to master it all.  
+> with interview questions, visual maps, and a final project to master it all.  
 > It is the **second link** in a series:
 > [**PHP Fundamentals**](https://github.com/galhoom-path/php-fundamentals) → **PHP OOP** → **OOD**.
 
 <br/>
 
-[📊 My Progress](#-my-progress) · [🚀 Get Started](#-how-to-start) · [📚 Lectures](#-track-1--lectures) · [💼 Interviews](#-track-2--interview-questions) · [🏗️ Project](#-track-3--final-project)
+[📊 My Progress](#-my-progress) · [🚀 Get Started](#-how-to-start) · [📚 Lectures](#-track-1--lectures) · [💼 Interviews](#-track-2--interview-questions) · [🗺️ Visual Maps](#-track-3--visual-maps) · [🏗️ Project](#-track-4--final-project)
 
 </div>
 
@@ -57,10 +57,11 @@
 | 📊 | [My Progress](#-my-progress) | Status, lecture list, milestones |
 | 🎯 | [Purpose](#-purpose) | Why this book exists |
 | 👤 | [Who This Is For](#-who-this-is-for) | Is this for you? |
-| 🗺️ | [Learning Path](#-learning-path) | Lectures → Interviews → Project |
+| 🗺️ | [Learning Path](#-learning-path) | Lectures → Interviews → Visual Maps → Project |
 | 📚 | [Track 1 — Lectures](#-track-1--lectures) | 31 sessions in 3 parts |
 | 💼 | [Track 2 — Interviews](#-track-2--interview-questions) | 42 questions |
-| 🏗️ | [Track 3 — Final Project](#-track-3--final-project) | SupportDesk Lite |
+| 🗺️ | [Track 3 — Visual Maps](#-track-3--visual-maps) | 12 diagrams |
+| 🏗️ | [Track 4 — Final Project](#-track-4--final-project) | SupportDesk Lite |
 | 🚀 | [How to Start](#-how-to-start) | Your first step |
 | 📁 | [Repository Structure](#-repository-structure) | Folder map |
 | ⚙️ | [Requirements](#-requirements) | What you need |
@@ -97,7 +98,8 @@
 |:---|:---:|:---|
 | 📚 **Lectures** | **12 / 31** | 🟡 In Progress — *Lecture 13 next* |
 | 💼 **Interview Questions** | **0 / 42** | 🔒 Locked — *starts after Lecture 31* |
-| 🏗️ **Final Project** | **0 / 14 milestones** | 🔒 Locked — *starts after interviews* |
+| 🗺️ **Visual Maps** | **0 / 12** | 🔒 Locked — *starts after interviews* |
+| 🏗️ **Final Project** | **0 / 14 milestones** | 🔒 Locked — *starts after visual maps* |
 
 <br/>
 
@@ -252,6 +254,10 @@ Object-Oriented Programming is how **real PHP applications** are built — from 
 <td><strong>Practice interview questions</strong> — explain what you know with confidence</td>
 </tr>
 <tr>
+<td align="center">🗺️</td>
+<td><strong>Draw visual maps</strong> — see objects, inheritance, and the system before building</td>
+</tr>
+<tr>
 <td align="center">🏆</td>
 <td><strong>Build a real capstone project</strong> — prove mastery from scratch</td>
 </tr>
@@ -318,10 +324,10 @@ Object-Oriented Programming is how **real PHP applications** are built — from 
 ```
         ╭──────────────────────────────────────────────────────╮
         │                                                      │
-        │   📚  TRACK 1          💼  TRACK 2        🏗️  TRACK 3   │
-        │   ──────────          ──────────        ──────────   │
-        │   31 Lectures    ──▶  42 Questions  ──▶  Final Project │
-        │   Official Docs       Interview Ready   SupportDesk    │
+        │   📚 TRACK 1    💼 TRACK 2    🗺️ TRACK 3    🏗️ TRACK 4 │
+        │   ──────────    ──────────    ──────────    ────────── │
+        │  31 Lectures ──▶ 42 Questions ──▶ 12 Maps ──▶ Project │
+        │   Official Docs  Interview Ready   See System  SupportDesk │
         │                                                      │
         ╰──────────────────────────────────────────────────────╯
                               │
@@ -453,13 +459,13 @@ Part-3-Modern-PHP/    →  Lectures 21–31
 
 <br/>
 
-## 🏗️ Track 3 — Final Project
+## 🗺️ Track 3 — Visual Maps
 
 <div align="center">
 
 ```
 ╔═══════════════════════════════════════════════╗
-║  🏆  C H A P T E R  3  ·  F I N A L  P R O J E C T  ║
+║  🗺️  C H A P T E R  3  ·  V I S U A L  M A P S  ║
 ╚═══════════════════════════════════════════════╝
 ```
 
@@ -469,7 +475,43 @@ Part-3-Modern-PHP/    →  Lectures 21–31
 
 | | |
 |:---|:---|
-| 📂 **Track folder** | [`03-Final-Project/`](03-Final-Project/) — guide + workspace |
+| 📂 **Track folder** | [`03-Visual-Maps/`](03-Visual-Maps/) — guide + workspace |
+| 🔢 **Maps** | **12 diagrams** — Mermaid-first, one idea each |
+| 🎯 **Goal** | See OOP as objects, trees, flows, and one system map before building |
+
+<br/>
+
+> 💡 Start this track **only after** completing all 42 interview questions.
+
+<br/>
+
+| Progress | Status |
+|:---:|:---|
+| **0 / 12** | 🔒 Not started yet |
+
+<br/>
+
+---
+
+<br/>
+
+## 🏗️ Track 4 — Final Project
+
+<div align="center">
+
+```
+╔═══════════════════════════════════════════════╗
+║  🏆  C H A P T E R  4  ·  F I N A L  P R O J E C T  ║
+╚═══════════════════════════════════════════════╝
+```
+
+</div>
+
+<br/>
+
+| | |
+|:---|:---|
+| 📂 **Track folder** | [`04-Final-Project/`](04-Final-Project/) — guide + workspace |
 | 🎯 **Project** | **SupportDesk Lite** — customer support ticketing system |
 | 🛠️ **Stack** | Pure PHP · No framework · No database required at first |
 
@@ -510,9 +552,9 @@ Part-3-Modern-PHP/    →  Lectures 21–31
 <div align="center">
 
 ```
-  STEP 1          STEP 2          STEP 3          STEP 4
-    📖      ──▶     📝      ──▶     💼      ──▶     🏗️
-  Lecture 1     Write Code     Interviews      Project
+  STEP 1       STEP 2       STEP 3       STEP 4       STEP 5
+    📖    ──▶    📝    ──▶    💼    ──▶    🗺️    ──▶    🏗️
+  Lecture 1   Write Code  Interviews   Visual Maps   Project
 ```
 
 </div>
@@ -525,7 +567,8 @@ Part-3-Modern-PHP/    →  Lectures 21–31
 | **1️⃣** | 📖 Open the lecture guide and start **Lecture 1** | [`01-Lectures/`](01-Lectures/) → [`Lecture-01-why-not-only-functions/`](01-Lectures/Part-1-Foundations/Lecture-01-why-not-only-functions/) |
 | **2️⃣** | ✍️ Type each example into that lecture’s `code-N.php` files — one session at a time | e.g. [`Lecture-09-asymmetric-visibility/`](01-Lectures/Part-1-Foundations/Lecture-09-asymmetric-visibility/) |
 | **3️⃣** | 💼 After all 31 lectures, practice interview answers | [`02-Interview-Questions/`](02-Interview-Questions/) |
-| **4️⃣** | 🏗️ Build the capstone when interviews are done | [`03-Final-Project/`](03-Final-Project/) |
+| **4️⃣** | 🗺️ Draw the OOP flows and the system map | [`03-Visual-Maps/`](03-Visual-Maps/) |
+| **5️⃣** | 🏗️ Build the capstone when visual maps are done | [`04-Final-Project/`](04-Final-Project/) |
 
 <br/>
 
@@ -567,7 +610,12 @@ Part-3-Modern-PHP/    →  Lectures 21–31
 │   ├── Question-01-what-is-oop/
 │   └── ...
 │
-└── 📂  03-Final-Project/                      ← 🏆 Track 3 · SupportDesk Lite
+├── 📂  03-Visual-Maps/                        ← 🗺️ Track 3 · 12 diagrams
+│   ├── README.md
+│   ├── Map-01-why-objects/
+│   └── ...
+│
+└── 📂  04-Final-Project/                      ← 🏆 Track 4 · SupportDesk Lite
     ├── README.md
     ├── src/                                   ←    (student-created)
     └── tests/                                 ←    (student-created)
@@ -648,7 +696,7 @@ Part-3-Modern-PHP/    →  Lectures 21–31
 
 | Version | Date | What changed |
 |:---|:---:|:---|
-| PHP 8.5 | 2026-06-21 | Baseline — 31 lectures, 42 interview questions, final project |
+| PHP 8.5 | 2026-06-21 | Baseline — 31 lectures, 42 interview questions, 12 visual maps, final project |
 
 <br/>
 
@@ -661,7 +709,7 @@ Part-3-Modern-PHP/    →  Lectures 21–31
 ```
 ╔══════════════════════════════════════════════════════════════╗
 ║                                                              ║
-║   📘  Read.  ✍️  Write.  💬  Explain.  🏗️  Build.  🏅  Master.  ║
+║   📘  Read.  ✍️  Write.  💬  Explain.  🗺️  Map.  🏗️  Build.  🏅  Master.  ║
 ║                                                              ║
 ╚══════════════════════════════════════════════════════════════╝
 ```

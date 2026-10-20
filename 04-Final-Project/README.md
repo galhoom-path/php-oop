@@ -2,23 +2,23 @@
 name: php-oop-final-project
 purpose: >
   This file has exactly one purpose: to guide one realistic final project that
-  proves the student understands the PHP OOP lecture track and the PHP OOP
-  interview-question track.
+  proves the student understands the PHP OOP lecture track, interview questions,
+  and visual maps.
 scope: >
   This file should only contain the final project plan, milestones, validation
   checklist, folder conventions, and mentor rules for the PHP OOP final project.
 description: >
   Structured final-project guide for building one real-world PHP OOP project
-  after finishing the lectures and interview questions. Trigger this skill when
-  the student says "start final project", "continue final project", "review my
-  final project", or asks to validate their PHP OOP understanding through a
-  practical project.
+  after finishing the lectures, interview questions, and visual maps. Trigger
+  this skill when the student says "start final project", "continue final
+  project", "review my final project", or asks to validate their PHP OOP
+  understanding through a practical project.
 triggers:
   - user wants to start the PHP OOP final project
   - user wants to continue the PHP OOP final project
   - user wants a real-world PHP OOP practice project
   - user wants to test whether they truly understand PHP OOP
-  - user asks for project review after finishing lectures and interview questions
+  - user asks for project review after finishing lectures, interviews, and visual maps
 ---
 
 # PHP OOP Final Project (PHP 8.5+) - SupportDesk Lite
@@ -36,7 +36,8 @@ Do not start this project yet.
 Start only after:
 1. All 31 lectures in `../01-Lectures/README.md` are completed.
 2. All 42 interview questions in `../02-Interview-Questions/README.md` are completed.
-3. The student explicitly says they are ready to start the final project.
+3. All 12 visual maps in `../03-Visual-Maps/README.md` are completed.
+4. The student explicitly says they are ready to start the final project.
 
 This project is the final proof step. It is not a lecture replacement.
 
@@ -158,7 +159,7 @@ The finished project must support these actions:
 The student will write project files inside this folder.
 
 ```
-03-Final-Project/
+04-Final-Project/
   README.md                      // This guide
   composer.json                  // Student-created when Composer is introduced
   src/
@@ -614,6 +615,7 @@ Lecture 29 - Late static bindings, comparison, and serialization
 Lecture 30 - End-to-end mini-project thinking
 Lecture 31 - PHPUnit testing
 Interview Questions 01-42 - Explain every major design choice in interview form
+Visual Maps 01-12 - Draw the OOP flows and the end-to-end system before building
 ```
 
 ---
@@ -678,7 +680,7 @@ Mark a milestone with ✅ only after the student can explain it and the code beh
 
 ## Source References
 
-This project is based on the same official learning sources used by the lecture and interview tracks.
+This project is based on the same official learning sources used by the lecture, interview, and visual-maps tracks.
 
 Sources:
 - https://www.php.net/manual/en/oop5.intro.php
