@@ -493,6 +493,7 @@ It is the only file that uses decorative emojis and ASCII boxes. Other files use
 - 🧩 **Learn every core concept** of {{SUBJECT}} using {{SUBJECT_VERSION}}
 - 📜 **Study from official sources** — grounded in {{PRIMARY_SOURCE_NAME}}, not random blog posts
 - 💬 **Practice interview questions** — explain what you know with confidence
+- 🗺️ **Draw visual maps** — flows, sequences, and one end-to-end system diagram (Mermaid)
 - 🏆 **Build a real capstone project** — prove mastery from scratch
 
 > 🚫 **No shortcuts.** ✅ **Just {{SUBJECT}} and real skill.**
@@ -513,9 +514,10 @@ It is the only file that uses decorative emojis and ASCII boxes. Other files use
 ## 🗺️ Learning Path
 
 ```
-   📚 TRACK 1              💼 TRACK 2            🏗️ TRACK 3
-   {{LECTURE_COUNT}} Lectures ──▶ {{QUESTION_COUNT}} Questions ──▶ {{MAP_COUNT}} Maps ──▶ Final Project
-   Official Docs         Interview Ready        See the system       {{PROJECT_NAME}}
+   📚 TRACK 1    💼 TRACK 2    🗺️ TRACK 3    🏗️ TRACK 4
+   Lectures  ──▶ Interviews ──▶ Visual Maps ──▶ Final Project
+   {{LECTURE_COUNT}} sessions   {{QUESTION_COUNT}} questions   {{MAP_COUNT}} diagrams     {{PROJECT_NAME}}
+   Learn         Explain        See the system  Build
                                    │
                                    ▼
                        🏅 {{SUBJECT}} Mastery Achieved
