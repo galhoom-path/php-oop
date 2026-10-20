@@ -255,7 +255,7 @@ Object-Oriented Programming is how **real PHP applications** are built — from 
 </tr>
 <tr>
 <td align="center">🗺️</td>
-<td><strong>Draw visual maps</strong> — see objects, inheritance, and the system before building</td>
+<td><strong>Draw visual maps</strong> — Mermaid OOP flows that look clear on GitHub before building</td>
 </tr>
 <tr>
 <td align="center">🏆</td>
@@ -476,7 +476,7 @@ Part-3-Modern-PHP/    →  Lectures 21–31
 | | |
 |:---|:---|
 | 📂 **Track folder** | [`03-Visual-Maps/`](03-Visual-Maps/) — guide + workspace |
-| 🔢 **Maps** | **12 diagrams** — Mermaid-first, one idea each |
+| 🔢 **Maps** | **12 diagrams** — Mermaid that looks clear on GitHub, one idea each |
 | 🎯 **Goal** | See OOP as objects, trees, flows, and one system map before building |
 
 <br/>

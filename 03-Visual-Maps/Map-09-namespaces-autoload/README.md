@@ -12,14 +12,15 @@ Trace from a fully qualified class name through a PSR-4 namespace prefix to a fi
 ## CHECK
 
 Explain the diagram out loud in under two minutes without reading every label.
+Also open `map.md` on GitHub: the Mermaid must render as a clear, readable SVG.
 
 ## Files
 
-- `map.md` — your Mermaid (or ASCII) diagram.
+- `map.md` — your Mermaid diagram (must look good on GitHub).
 - `notes.md` — optional short reflection.
 
 ## Completion Rule
 
-After the diagram is accurate and you pass the CHECK, mark this map with ✅ in `../README.md`.
+After the diagram is accurate, renders cleanly on GitHub, and you pass the CHECK, mark this map with ✅ in `../README.md`.
 
 Sources: https://www.php.net/manual/en/language.namespaces.php, https://www.php-fig.org/psr/psr-4/

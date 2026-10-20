@@ -31,9 +31,10 @@ Start this track only after the Interview Track Review Checklist in `../02-Inter
 Every map session:
 - Restate what concept or flow the map must show.
 - Choose the simplest diagram kind that fits (see Map Kind Guide).
-- The student draws in `map.md` (Mermaid by default).
+- The student draws in `map.md` (Mermaid by default), following Diagram Standards so it looks clear on GitHub.
 - Ask one CHECK: the student explains the diagram out loud without reading labels one by one.
-- Mark the map with ✅ only after the diagram is accurate and the CHECK passes.
+- Confirm the diagram renders cleanly when `map.md` is opened on GitHub (or with Mermaid syntax GitHub supports).
+- Mark the map with ✅ only after the diagram is accurate, the GitHub view looks good, and the CHECK passes.
 - Keep a `Source:` line on every map folder `README.md`.
 
 This track stays inside PHP OOP. Do not teach design patterns or full SOLID theory here; those belong to the separate OOD course. Map 11 is only a one-box "out of scope" reminder, not a SOLID lesson.
@@ -45,6 +46,7 @@ This track stays inside PHP OOP. Do not teach design patterns or full SOLID theo
 - [ ] Every map folder has `README.md` and a completed `map.md`.
 - [ ] Every map folder `README.md` ends with a `Source:` or `Sources:` line.
 - [ ] The final map is an end-to-end system view of a small PHP OOP application.
+- [ ] Every completed `map.md` renders cleanly on GitHub (no Mermaid parse error; labels readable at a glance).
 - [ ] The student can explain each map in plain English without reading every label.
 - [ ] Weak maps were redrawn until the CHECK passed.
 ```
@@ -91,12 +93,13 @@ Map 12 - End-to-end OOP system map
 - Pick one diagram kind from the Map Kind Guide.
 
 ### DO
-- Student drafts the Mermaid diagram in `map.md`.
-- Tutor reviews accuracy and simplicity (one idea, clear labels).
+- Student drafts the Mermaid diagram in `map.md` using Diagram Standards (GitHub-first).
+- Tutor reviews accuracy, simplicity (one idea, clear labels), and how it will look on GitHub.
 
 ### CHECK
 - Student explains the diagram aloud as if at a whiteboard.
-- One targeted fix if a relationship or order is wrong.
+- Open `map.md` on GitHub (browser file view): it must render as a clear SVG — no parse error, no cramped sprawl, readable labels.
+- One targeted fix if a relationship, order, or GitHub render is wrong.
 
 ### ACT
 - Mark ✅, update progress in this file, move to the next map.
@@ -105,11 +108,45 @@ Map 12 - End-to-end OOP system map
 
 ## Diagram Standards
 
-- Default format: Mermaid fenced blocks inside `map.md`.
-- Prefer clear names over clever abbreviations.
-- One primary idea per map. Split if the diagram needs a legend longer than the diagram.
-- No pre-drawn answer keys in the scaffold.
-- Labels stay in plain English; PHP keywords only when the map is about that keyword.
+**Acceptance check:** a completed map must look clear when you open `map.md` on GitHub (browser file view). Looking good only in a local Mermaid plugin is not enough.
+
+### Format (what GitHub renders)
+
+- Default: one fenced `mermaid` block inside `map.md` — GitHub turns it into an SVG ([Creating diagrams](https://docs.github.com/en/get-started/writing-on-github/working-with-advanced-formatting/creating-diagrams)).
+- Prefer stable kinds GitHub renders well: `flowchart`, `sequenceDiagram`, `stateDiagram-v2`.
+- Prefer `flowchart TB` (top → bottom) over wide `LR` layouts — GitHub's content column is narrow.
+- ASCII is a fallback only when Mermaid cannot express the idea; it must still read cleanly in the GitHub file view.
+
+### Look and readability
+
+- One primary idea per map. Split if you need a legend longer than the diagram.
+- Short plain-English labels (about 2–5 words). Quote labels that contain `()[]{}/|`.
+- Prefer clear names over clever abbreviations. PHP keywords only when the map is about that keyword.
+- Aim for roughly **4–12 nodes**. More than that usually means two maps.
+- Use `subgraph` sparingly; nested subgraphs often look cramped on GitHub.
+- Never use `end` as a node id (it breaks Mermaid parsing).
+- Style with `classDef` + `class`: pastel fills and **dark text** so labels stay readable on GitHub's light theme.
+
+Style palette to reuse (adapt colors; do not skip styling):
+
+```mermaid
+flowchart TB
+    A([Start]) --> B[Step]
+    B --> C{Decision?}
+    C -->|Yes| D([Done])
+    C -->|No| B
+    classDef startEnd fill:#dbeafe,stroke:#1d4ed8,color:#1e3a8a,stroke-width:2px
+    classDef process  fill:#f0fdf4,stroke:#15803d,color:#14532d,stroke-width:2px
+    classDef decision fill:#fef3c7,stroke:#d97706,color:#78350f,stroke-width:2px
+    class A,D startEnd
+    class B process
+    class C decision
+```
+
+### Do not
+
+- Do not rely on a dark-only theme, custom CSS, Mermaid Live Editor-only features, or screenshot images as the primary diagram.
+- Do not pre-draw answer keys in the scaffold (the stub may show a single styled placeholder node only).
 
 ---
 
@@ -150,7 +187,7 @@ When a map is completed:
 2. Mark the matching map with ✅ in the progress list in this file.
 3. Keep the student's diagram in that map's `map.md`.
 
-`map.md` is scaffolded empty with a Mermaid stub the learner fills. `notes.md` is optional and learner-created.
+`map.md` is a GitHub-valid Mermaid stub (styled placeholder); the learner replaces it with the real diagram. `notes.md` is optional and learner-created.
 
 ---
 
@@ -161,4 +198,5 @@ When a map is completed:
 - Do not teach a full UML syllabus — only the map kinds needed for PHP OOP.
 - Do not unlock the final project before the end-to-end system map CHECK passes.
 - Do not draw the learner's diagrams for them.
+- Do not accept a map that only looks good in a local plugin — the GitHub file view is the acceptance check.
 - Do not turn maps into a full SOLID or design-patterns course (redirect to OOD).
