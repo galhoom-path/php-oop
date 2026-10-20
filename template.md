@@ -493,7 +493,7 @@ It is the only file that uses decorative emojis and ASCII boxes. Other files use
 - 🧩 **Learn every core concept** of {{SUBJECT}} using {{SUBJECT_VERSION}}
 - 📜 **Study from official sources** — grounded in {{PRIMARY_SOURCE_NAME}}, not random blog posts
 - 💬 **Practice interview questions** — explain what you know with confidence
-- 🗺️ **Draw visual maps** — flows, sequences, and one end-to-end system diagram (Mermaid)
+- 🗺️ **Draw visual maps** — Mermaid flows and one system map that look clear on GitHub
 - 🏆 **Build a real capstone project** — prove mastery from scratch
 
 > 🚫 **No shortcuts.** ✅ **Just {{SUBJECT}} and real skill.**
@@ -593,7 +593,7 @@ Part-3-{{PART_3_NAME}}/   →  Lectures NN–{{LECTURE_COUNT}}
 | | |
 |:---|:---|
 | 📂 **Track folder** | [`03-Visual-Maps/`](03-Visual-Maps/) — guide + workspace |
-| 🔢 **Maps** | **{{MAP_COUNT}} diagrams** — Mermaid-first, one idea each |
+| 🔢 **Maps** | **{{MAP_COUNT}} diagrams** — Mermaid that looks clear on GitHub, one idea each |
 | 🎯 **Goal** | See the subject as flows, sequences, and one system map before building |
 
 > 💡 Start this track **only after** completing all {{QUESTION_COUNT}} interview questions.
@@ -1502,6 +1502,8 @@ Source: {{deep link}}
 The **visual synthesis** track. After the learner can explain the subject in words (interviews),
 they prove they can **see** it: flows, sequences, layers, and one end-to-end system map.
 Diagrams use **Mermaid inside Markdown** by default (git-friendly, no proprietary tools).
+The acceptance check is the **GitHub file view**: every completed `map.md` must render as a clear SVG there,
+not only in a local editor plugin.
 
 ### How to design the maps
 
@@ -1509,8 +1511,8 @@ Diagrams use **Mermaid inside Markdown** by default (git-friendly, no proprietar
 - About **0.3–0.5 × lecture count** maps (Section 5). Every major part of the curriculum appears at least once.
 - Mix map kinds as needed: concept map, flowchart, sequence, state, layers/placement, compare, end-to-end system.
 - The **last map** is always the end-to-end system map. Completing it unlocks the final project.
-- Each map folder ships with a scaffolded `README.md` and an empty `map.md` stub (Mermaid fences ready to fill).
-- The learner draws; the tutor reviews. Do not pre-draw the answers in the scaffold.
+- Each map folder ships with a scaffolded `README.md` and a GitHub-valid `map.md` stub (styled placeholder Mermaid only — not the answer).
+- The learner draws; the tutor reviews accuracy and the GitHub render. Do not pre-draw the answers in the scaffold.
 
 ### Required sections in `03-Visual-Maps/README.md` (in this exact order)
 
@@ -1520,7 +1522,7 @@ Diagrams use **Mermaid inside Markdown** by default (git-friendly, no proprietar
 4. `## Visual Maps Track ({{MAP_COUNT}} Maps, One Per Session)` — rules + Review Checklist + Progress list.
 5. `## Map Kind Guide` — short plain-language list of allowed diagram kinds.
 6. `## Visual Map Session Cycle` — PLAN / DO / CHECK / ACT.
-7. `## Diagram Standards` — Mermaid-first, plain labels, one idea per map.
+7. `## Diagram Standards` — Mermaid-first, **GitHub-rendered** look, plain labels, one idea per map.
 8. `## Source Reference Rules`
 9. `## Visual Maps Folder Structure`
 10. `## Map Folder Rules`
@@ -1562,9 +1564,10 @@ Start this track only after the Interview Track Review Checklist in `../02-Inter
 Every map session:
 - Restate what concept or flow the map must show.
 - Choose the simplest diagram kind that fits (see Map Kind Guide).
-- The student draws in `map.md` (Mermaid by default).
+- The student draws in `map.md` (Mermaid by default), following Diagram Standards so it looks clear on GitHub.
 - Ask one CHECK: the student explains the diagram out loud without reading labels one by one.
-- Mark the map with ✅ only after the diagram is accurate and the CHECK passes.
+- Confirm the diagram renders cleanly when `map.md` is opened on GitHub (or with Mermaid syntax GitHub supports).
+- Mark the map with ✅ only after the diagram is accurate, the GitHub view looks good, and the CHECK passes.
 - Keep a `Source:` line on every map folder `README.md`.
 
 This track stays inside {{SUBJECT}}. Do not teach {{OUT_OF_SCOPE}} here.
@@ -1576,6 +1579,7 @@ This track stays inside {{SUBJECT}}. Do not teach {{OUT_OF_SCOPE}} here.
 - [ ] Every map folder has `README.md` and a completed `map.md`.
 - [ ] Every map folder `README.md` ends with a `Source:` or `Sources:` line.
 - [ ] The final map is an end-to-end system view of {{SUBJECT}}.
+- [ ] Every completed `map.md` renders cleanly on GitHub (no Mermaid parse error; labels readable at a glance).
 - [ ] The student can explain each map in plain English without reading every label.
 - [ ] Weak maps were redrawn until the CHECK passed.
 ```
@@ -1614,12 +1618,13 @@ Map {{MAP_COUNT}} - End-to-end system map
 - Pick one diagram kind from the Map Kind Guide.
 
 ### DO
-- Student drafts the Mermaid diagram in `map.md`.
-- Tutor reviews accuracy and simplicity (one idea, clear labels).
+- Student drafts the Mermaid diagram in `map.md` using Diagram Standards (GitHub-first).
+- Tutor reviews accuracy, simplicity (one idea, clear labels), and how it will look on GitHub.
 
 ### CHECK
 - Student explains the diagram aloud as if at a whiteboard.
-- One targeted fix if a relationship or order is wrong.
+- Open `map.md` on GitHub (browser file view): it must render as a clear SVG — no parse error, no cramped sprawl, readable labels.
+- One targeted fix if a relationship, order, or GitHub render is wrong.
 
 ### ACT
 - Mark ✅, update progress (Section 16), move to the next map.
@@ -1628,10 +1633,45 @@ Map {{MAP_COUNT}} - End-to-end system map
 
 ## Diagram Standards
 
-- Default format: Mermaid fenced blocks inside `map.md`.
+**Acceptance check:** a completed map must look clear when you open `map.md` on GitHub (browser file view). Looking good only in a local Mermaid plugin is not enough.
+
+### Format (what GitHub renders)
+
+- Default: one fenced `mermaid` block inside `map.md` — GitHub turns it into an SVG ([Creating diagrams](https://docs.github.com/en/get-started/writing-on-github/working-with-advanced-formatting/creating-diagrams)).
+- Prefer stable kinds GitHub renders well: `flowchart`, `sequenceDiagram`, `stateDiagram-v2`.
+- Prefer `flowchart TB` (top → bottom) over wide `LR` layouts — GitHub's content column is narrow.
+- ASCII is a fallback only when Mermaid cannot express the idea; it must still read cleanly in the GitHub file view.
+
+### Look and readability
+
+- One primary idea per map. Split if you need a legend longer than the diagram.
+- Short plain-English labels (about 2–5 words). Quote labels that contain `()[]{}/|`.
 - Prefer clear names over clever abbreviations.
-- One primary idea per map. Split if the diagram needs a legend longer than the diagram.
-- No pre-drawn answer keys in the scaffold.
+- Aim for roughly **4–12 nodes**. More than that usually means two maps.
+- Use `subgraph` sparingly; nested subgraphs often look cramped on GitHub.
+- Never use `end` as a node id (it breaks Mermaid parsing).
+- Style with `classDef` + `class`: pastel fills and **dark text** so labels stay readable on GitHub's light theme.
+
+Style palette to reuse (adapt colors; do not skip styling):
+
+```mermaid
+flowchart TB
+    A([Start]) --> B[Step]
+    B --> C{Decision?}
+    C -->|Yes| D([Done])
+    C -->|No| B
+    classDef startEnd fill:#dbeafe,stroke:#1d4ed8,color:#1e3a8a,stroke-width:2px
+    classDef process  fill:#f0fdf4,stroke:#15803d,color:#14532d,stroke-width:2px
+    classDef decision fill:#fef3c7,stroke:#d97706,color:#78350f,stroke-width:2px
+    class A,D startEnd
+    class B process
+    class C decision
+```
+
+### Do not
+
+- Do not rely on a dark-only theme, custom CSS, Mermaid Live Editor-only features, or screenshot images as the primary diagram.
+- Do not pre-draw answer keys in the scaffold (the stub may show a single styled placeholder node only).
 
 ---
 
@@ -1658,7 +1698,7 @@ Every map folder `README.md` ends with `Source:` or `Sources:` pointing at the o
 ## Map Folder Rules
 
 - `README.md` is scaffolded (prompt, kind, CHECK, Source).
-- `map.md` is scaffolded empty with a Mermaid stub the learner fills.
+- `map.md` is a GitHub-valid Mermaid stub (styled placeholder); the learner replaces it with the real diagram.
 - `notes.md` is optional and learner-created.
 
 ---
@@ -1670,6 +1710,7 @@ Every map folder `README.md` ends with `Source:` or `Sources:` pointing at the o
 - Do not teach a full UML syllabus — only the map kinds needed for {{SUBJECT}}.
 - Do not unlock the final project before the end-to-end system map CHECK passes.
 - Do not draw the learner's diagrams for them.
+- Do not accept a map that only looks good in a local plugin — the GitHub file view is the acceptance check.
 ````
 
 ### Template — map folder `README.md`
@@ -1689,15 +1730,16 @@ Diagram kind: {{flowchart | sequence | concept map | state | layers | compare | 
 ## CHECK
 
 Explain the diagram out loud in under two minutes without reading every label.
+Also open `map.md` on GitHub: the Mermaid must render as a clear, readable SVG.
 
 ## Files
 
-- `map.md` — your Mermaid (or ASCII) diagram.
+- `map.md` — your Mermaid diagram (must look good on GitHub).
 - `notes.md` — optional short reflection.
 
 ## Completion Rule
 
-After the diagram is accurate and you pass the CHECK, mark this map with ✅ in `../README.md`.
+After the diagram is accurate, renders cleanly on GitHub, and you pass the CHECK, mark this map with ✅ in `../README.md`.
 
 ## Source
 
@@ -1706,11 +1748,20 @@ Source: {{deep link or lecture outline reference}}
 
 ### Template — `map.md` stub
 
+The stub must be a **valid** Mermaid fence so GitHub already renders something (a single placeholder node). The learner replaces the placeholder; this is not an answer key.
+
 ````markdown
 # {{Map title}}
 
+> **GitHub check:** after you draw, open this file on GitHub — the diagram must render as a clear SVG (no parse error, readable labels). See Diagram Standards in `../README.md`.
+
 ```mermaid
-%% Draft your diagram here.
+flowchart TB
+    %% Replace this placeholder. Prefer TB + classDef (pastel fill, dark text).
+    Placeholder["Draft your diagram here"]
+
+    classDef process fill:#f0fdf4,stroke:#15803d,color:#14532d,stroke-width:2px
+    class Placeholder process
 ```
 ````
 
@@ -2081,8 +2132,9 @@ Structure
 - [ ] Every lecture folder contains empty `code-1` … `code-6` stubs and a `review-7.md` stub (Section 10.4).
 - [ ] Milestone lectures use `Lecture-NN-Milestone-slug` and match {{MILESTONE_LECTURES}}.
 - [ ] Every question folder exists with its README.md.
-- [ ] Every map folder exists with its README.md and empty `map.md` stub.
-- [ ] No learner content was pre-written (only the empty lecture stubs from Section 10.4 and empty map stubs exist).
+- [ ] Every map folder exists with its README.md and GitHub-valid `map.md` stub (Section 13).
+- [ ] `03-Visual-Maps/README.md` Diagram Standards include the GitHub render acceptance check.
+- [ ] No learner content was pre-written (only the empty lecture stubs from Section 10.4 and map placeholder stubs exist).
 
 Content
 - [ ] Lecture 01 explains the problem, not the solution.
@@ -2143,7 +2195,7 @@ Rules:
    - 02-Interview-Questions/README.md (Section 11 template, full question list + source map)
    - One README.md per question folder (Section 12 template, Source line last)
    - 03-Visual-Maps/README.md (Section 13 template, full map list + standards)
-   - One README.md + empty map.md per map folder (Section 13 templates)
+    - One README.md + GitHub-valid map.md stub per map folder (Section 13 templates)
    - 04-Final-Project/README.md (Section 14 template, real business scenario, milestones 00..NN,
      concept coverage for every lecture)
    - .cursor/rules/template-sync.mdc (copied exactly from Section 19)
@@ -2176,6 +2228,7 @@ Interview practice:
 Visual maps:
   Act as defined in 03-Visual-Maps/README.md. Take the next map without ✅
   and run the Visual Map Session Cycle. Do not draw my diagram for me.
+  Diagrams must look clear when map.md is opened on GitHub (Diagram Standards).
 
 Final project:
   Act as the mentor defined in 04-Final-Project/README.md. I am on Milestone NN.
